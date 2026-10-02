@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Creá tu perfil de talento en deleFOCO: actuación, modelaje, danza, música y presentación. Postulate a castings activos en Costa Rica y Centroamérica." />
+  <meta name="theme-color" content="#070707" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Soy Talento: Creá tu perfil | deleFOCO Casting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="icono.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="logo-delefoco-icono.png" as="image" />
+</head>
+<body class="mode-b2c theme-dark" data-audience="b2c">
+<header class="topbar">
+    <a class="brand" href="#inicio" aria-label="deleFOCO">
+      <img
+        src="logo.png"
+        alt="deleFOCO"
+        class="logo"
+        width="180"
+        height="40"
+        decoding="async"
+      >
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menú" data-en-aria-label="Menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+
+    <nav class="nav" id="mainNav" aria-label="Navegación principal" data-en-aria-label="Main navigation"><a data-en="What we offer" href="#ofrecemos">Qué ofrecemos</a><a class="nav-minor" data-en="How it works" href="#proceso">Cómo funciona</a><a data-en="Talent of the month" href="#talento">Talento del mes</a><a data-en="Opportunities" href="#oportunidades">Oportunidades</a><a data-en="Create my profile" href="#perfil">Crear mi perfil</a><a class="nav-minor" data-en="FAQ" href="#faq">Preguntas frecuentes</a><a class="nav-advisor js-advisor" href="https://wa.me/50686823430" target="_blank" rel="noopener" data-en="Talk to an advisor">Hablar con un asesor</a></nav>
+
+    <div class="controls">
+      <div class="segmented" role="group" aria-label="Idioma" data-en-aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="es">ES</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="color-toggle" id="colorToggle" type="button" aria-label="Cambiar tema" title="Cambiar tema" aria-pressed="false">
+        <span class="color-toggle-icon" aria-hidden="true">☾</span>
+        <span class="color-toggle-text">Oscuro</span>
+      </button>
+      <div class="audience-switch" role="group" aria-label="¿Qué necesitás?" data-en-aria-label="What do you need?">
+        <a class="audience-item" href="https://servicio-casting.vercel.app/" data-en="I'm looking for talent">Busco talento</a>
+        <a class="audience-item active" href="#inicio" aria-current="page" data-en="I'm talent">Soy talento</a>
+      </div>
+      <a class="header-cta js-advisor" href="https://wa.me/50686823430" target="_blank" rel="noopener" role="button" data-en="Talk to an advisor">Hablar con un asesor</a>
+    </div>
+  </header>
+<main>
+<section class="hero" id="inicio"><div class="hero-bg-photo"></div><div class="hero-overlay"></div><div class="hero-grid"></div>
+<img src="logo-delefoco-icono.png" alt="" class="hero-delefoco-icon" aria-hidden="true" width="640" height="640" decoding="async" fetchpriority="low">
+<div class="hero-flex"><div class="hero-content"><p class="eyebrow" data-en="TALENT · CASTING">TALENTO · CASTING</p>
+<h1 id="heroTitle" data-en="Your talent,<br><span>in front of the right camera.</span>">Tu talento,<br><span>frente a la cámara correcta.</span></h1>
+<p data-en="Join the most active talent roster in Costa Rica.">Sumate al roster de talento más activo de Costa Rica.</p>
+<div class="hero-actions"><a class="btn btn-red" href="#perfil"><span data-en="Create my profile">Crear mi perfil</span> <span>→</span></a><a class="btn btn-outline" href="#oportunidades"><span data-en="See active opportunities">Ver oportunidades activas</span></a></div><div class="hero-meta"><span><b>01</b> <span data-en="Profile">Perfil</span></span><span><b>02</b> <span data-en="Book">Book</span></span><span><b>03</b> <span data-en="Casting">Casting</span></span></div></div>
+<div class="hero-carousel" id="heroCarousel" aria-roledescription="carrusel" data-en-aria-roledescription="carousel" aria-label="Talento deleFOCO" data-en-aria-label="deleFOCO talent"><span class="hero-carousel-tag">deleFOCO TALENTO</span><div class="hero-carousel-track"><a class="hero-carousel-slide active" href="#talento" aria-label="Talento deleFOCO" data-en-aria-label="deleFOCO talent" style="background-image:url('italia90.jpg');background-position:center 25%"></a><a class="hero-carousel-slide" href="#talento" aria-label="Talento deleFOCO" data-en-aria-label="deleFOCO talent" style="background-image:url('camara.jpg');background-position:center 25%"></a><a class="hero-carousel-slide" href="#talento" aria-label="Talento deleFOCO" data-en-aria-label="deleFOCO talent" style="background-image:url('claqueta.jpg');background-position:center 25%"></a><a class="hero-carousel-slide" href="#talento" aria-label="Talento deleFOCO" data-en-aria-label="deleFOCO talent" style="background-image:url('sonido.jpg');background-position:center 25%"></a></div>
+<button type="button" class="hero-carousel-arrow prev" id="heroCarouselPrev" aria-label="Anterior" data-en-aria-label="Previous">‹</button><button type="button" class="hero-carousel-arrow next" id="heroCarouselNext" aria-label="Siguiente" data-en-aria-label="Next">›</button>
+<div class="hero-carousel-dots" role="tablist" aria-label="Seleccionar imagen" data-en-aria-label="Select image"><button type="button" class="active" data-index="0" role="tab" aria-selected="true" aria-label="Imagen 1" data-en-aria-label="Image 1"></button><button type="button" data-index="1" role="tab" aria-selected="false" aria-label="Imagen 2" data-en-aria-label="Image 2"></button><button type="button" data-index="2" role="tab" aria-selected="false" aria-label="Imagen 3" data-en-aria-label="Image 3"></button><button type="button" data-index="3" role="tab" aria-selected="false" aria-label="Imagen 4" data-en-aria-label="Image 4"></button></div></div></div></section>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><div class="marquee-group"><span data-en="ACTING">ACTUACIÓN</span><i>●</i><span data-en="MODELING">MODELAJE</span><i>●</i><span data-en="DANCE">DANZA</span><i>●</i><span data-en="MUSIC">MÚSICA</span><i>●</i><span data-en="HOSTING">PRESENTACIÓN</span><i>●</i><span data-en="YOUR TURN">TU TURNO</span><i>●</i></div><div class="marquee-group"><span data-en="ACTING">ACTUACIÓN</span><i>●</i><span data-en="MODELING">MODELAJE</span><i>●</i><span data-en="DANCE">DANZA</span><i>●</i><span data-en="MUSIC">MÚSICA</span><i>●</i><span data-en="HOSTING">PRESENTACIÓN</span><i>●</i><span data-en="YOUR TURN">TU TURNO</span><i>●</i></div></div></div>
+<section class="section" id="ofrecemos"><div class="section-heading"><div><p class="eyebrow dark" data-en="WHAT WE OFFER">QUÉ OFRECEMOS</p><h2 data-en="Everything to get you seen.">Todo para que te vean.</h2></div><p data-en="Four ways deleFOCO moves your career forward.">Cuatro formas en que deleFOCO impulsa tu carrera.</p></div><div class="service-grid"><article class="service-card"><span class="service-number">01</span><div class="icon">◎</div><h3 data-en="Profile visible to producers and brands">Perfil visible ante productoras y marcas</h3><p data-en="Your profile lives in the directory casting teams search.">Tu perfil aparece en el directorio que consultan equipos de casting.</p></article><article class="service-card"><span class="service-number">02</span><div class="icon">➤</div><h3 data-en="Open calls and active castings">Convocatorias y castings activos</h3><p data-en="Apply directly from the Opportunities module.">Postulate directo desde el módulo Oportunidades.</p><a class="text-btn" href="#oportunidades" data-opp data-en="See Opportunities →">Ver Oportunidades →</a></article><article class="service-card"><span class="service-number">03</span><div class="icon">★</div><h3 data-en="Participation levels">Niveles de participación</h3><p data-en="Base (Directory) → deleFOCO SELECT → Representation. Grow at your pace.">Base (Directorio) → deleFOCO SELECT → Representación. Crecé a tu ritmo.</p><a class="text-btn" href="#niveles" data-en="See the levels →">Ver los niveles →</a></article><article class="service-card"><span class="service-number">04</span><div class="icon">▣</div><h3 data-en="Complementary training">Formación complementaria</h3><p data-en="Workshops and masterclasses at the School to level up your profile.">Talleres y masterclasses en la Escuela para mejorar tu perfil.</p><a class="text-btn" href="https://delefoco.com/escuela/" target="_blank" rel="noopener" data-en="Go to the School →">Ir a la Escuela →</a></article></div><div class="levels" id="niveles"><div class="levels-head"><p class="eyebrow dark" data-en="PARTICIPATION LEVELS">NIVELES DE PARTICIPACIÓN</p><h3 data-en="Start free. Grow at your pace.">Empezá gratis. Crecé a tu ritmo.</h3></div><article class="level "><p class="level-tag" data-en="LEVEL 1">NIVEL 1</p><h3 data-en="Base · Directory">Base · Directorio</h3><p class="level-sub" data-en="To get started">Para empezar</p><p class="level-price" data-en="Free">Gratis</p><ul class="level-list"><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="Profile visible in the directory">Perfil visible en el directorio</span></span></li><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="Apply to open calls">Postulación a convocatorias</span></span></li><li class="no"><i aria-hidden="true">—</i><span><span class="lvl-sr" data-en="Not included: ">No incluido: </span><span data-en="More visibility and contact priority">Mayor visibilidad y prioridad de contacto</span></span></li><li class="no"><i aria-hidden="true">—</i><span><span class="lvl-sr" data-en="Not included: ">No incluido: </span><span data-en="Management of your career and castings">Gestión de tu carrera y tus castings</span></span></li></ul><a class="btn btn-outline" href="#perfil"><span data-en="Create my profile">Crear mi perfil</span> <span>→</span></a></article><article class="level level-main"><p class="level-tag" data-en="LEVEL 2">NIVEL 2</p><h3 data-en="deleFOCO SELECT">deleFOCO SELECT</h3><p class="level-sub" data-en="Featured profiles">Perfiles destacados</p><p class="level-price" data-en="Ask an advisor">Consultá con un asesor</p><ul class="level-list"><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="Profile visible in the directory">Perfil visible en el directorio</span></span></li><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="Apply to open calls">Postulación a convocatorias</span></span></li><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="More visibility and contact priority">Mayor visibilidad y prioridad de contacto</span></span></li><li class="no"><i aria-hidden="true">—</i><span><span class="lvl-sr" data-en="Not included: ">No incluido: </span><span data-en="Management of your career and castings">Gestión de tu carrera y tus castings</span></span></li></ul><a class="btn btn-red" href="https://wa.me/50686823430" target="_blank" rel="noopener" data-wa="select"><span data-en="I want to be SELECT">Quiero ser SELECT</span> <span>→</span></a></article><article class="level "><p class="level-tag" data-en="LEVEL 3">NIVEL 3</p><h3 data-en="Representation">Representación</h3><p class="level-sub" data-en="Full support">Acompañamiento completo</p><p class="level-price" data-en="Ask an advisor">Consultá con un asesor</p><ul class="level-list"><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="Profile visible in the directory">Perfil visible en el directorio</span></span></li><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="Apply to open calls">Postulación a convocatorias</span></span></li><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="More visibility and contact priority">Mayor visibilidad y prioridad de contacto</span></span></li><li class="yes"><i aria-hidden="true">✓</i><span><span class="lvl-sr" data-en="Included: ">Incluido: </span><span data-en="Management of your career and castings">Gestión de tu carrera y tus castings</span></span></li></ul><a class="btn btn-outline" href="https://wa.me/50686823430" target="_blank" rel="noopener" data-wa="rep"><span data-en="Talk about representation">Hablar de representación</span> <span>→</span></a></article></div></section>
+<section class="process section" id="proceso"><div class="section-heading"><div><p class="eyebrow dark" data-en="HOW IT WORKS">CÓMO FUNCIONA</p><h2 data-en="Four steps, from profile to payment.">Cuatro pasos, de tu perfil a tu pago.</h2></div><p data-en="You always know where you stand.">Siempre sabés en qué etapa estás.</p></div><div class="timeline"><div class="step"><span>01</span><h3 data-en="Create your profile">Creás tu perfil</h3><p data-en="Fill in your details, photos and specialties.">Completá tus datos, fotos y especialidades.</p></div><div class="step"><span>02</span><h3 data-en="Upload your book/showreel">Subís tu book/showreel</h3><p data-en="Show your work with photos and video.">Mostrá tu trabajo con fotos y video.</p></div><div class="step"><span>03</span><h3 data-en="Apply or get contacted">Te postulás o te contactan</h3><p data-en="Apply to open calls or receive casting offers.">Aplicá a convocatorias o recibí propuestas de castings.</p></div><div class="step"><span>04</span><h3 data-en="We coordinate your process and payment">Coordinamos tu proceso y pago</h3><p data-en="Auditions, contract and payment, with support.">Audiciones, contrato y pago, con acompañamiento.</p></div></div><div class="proceso-cta"><a class="btn btn-red" href="#perfil"><span data-en="Create my profile">Crear mi perfil</span> <span>→</span></a></div></section>
+<section class="section" id="talento"><div class="section-heading"><div><p class="eyebrow dark" data-en="SOCIAL PROOF">PRUEBA SOCIAL</p><h2 data-en="Talent already on camera.">Talento que ya está en cámara.</h2></div><p data-en="Real profiles and testimonials from our community.">Perfiles reales y testimonios de nuestra comunidad.</p></div>
+<article class="spot"><a class="spot-photo" href="https://delefoco.com/?action=casting-profile-view&id=1138" target="_blank" rel="noopener"><span class="spot-tag" data-en="TALENT OF THE MONTH">TALENTO DEL MES</span><img src="melissa.jpg" alt="Melissa, talento del mes en deleFOCO" width="640" height="800" loading="lazy"></a>
+<div class="spot-body"><p class="eyebrow dark" data-en="EDITORIAL · OCTOBER 2026">EDITORIAL · OCTUBRE 2026</p><h3>Melissa</h3><ul class="spot-meta"><li data-en="Fashion · Commercial">Moda · Comercial</li><li data-en="Costa Rica · ES · EN">Costa Rica · ES · EN</li></ul><p data-en="Featured profile from the public deleFOCO directory. See her book and showreel on her full profile.">Perfil destacado del directorio público de deleFOCO. Mirá su book y showreel en su perfil completo.</p><div class="hero-actions"><a class="btn btn-red" href="https://delefoco.com/?action=casting-profile-view&id=1138" target="_blank" rel="noopener"><span data-en="View full profile">Ver perfil completo</span> <span>→</span></a><a class="btn btn-outline" href="https://delefoco.com/?action=casting-profile-view&id=1138" target="_blank" rel="noopener"><span>▶</span> <span data-en="Showreel">Showreel</span></a></div></div></article>
+<div class="quotes"><!-- REEMPLAZAR por testimonios reales -->
+<figure class="quote"><blockquote data-en="“I uploaded my profile on Monday and was at a callback within two weeks.”">“Subí mi perfil un lunes y a las dos semanas ya estaba en un callback.”</blockquote><figcaption>[Nombre] · <span data-en="[Specialty]">[Especialidad]</span></figcaption></figure>
+<figure class="quote"><blockquote data-en="“They handled the contract and payment. I only had to worry about acting.”">“Se encargaron del contrato y el pago. Yo solo me preocupé por actuar.”</blockquote><figcaption>[Nombre] · <span data-en="[Specialty]">[Especialidad]</span></figcaption></figure>
+<figure class="quote"><blockquote data-en="“I found my first commercial in Opportunities.”">“Mi primer comercial lo encontré en Oportunidades.”</blockquote><figcaption>[Nombre] · <span data-en="[Specialty]">[Especialidad]</span></figcaption></figure></div>
+
+<div class="talent-mosaic" aria-label="Talento del roster deleFOCO">
+  <p class="mosaic-label" data-en="More faces already on camera">Más caras que ya están en cámara</p>
+  <div class="mosaic-grid">
+    <figure class="mosaic-item">
+      <img src="adriana.jpg" alt="Adriana · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption>Adriana</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="daniel.jpg" alt="Daniel · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption>Daniel</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="elia.jpg" alt="Elia · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption>Elia</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="nery.jpg" alt="Nery · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption>Nery</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="raquel.jpg" alt="Raquel · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption>Raquel</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="talent-acting.jpg" alt="Actuación · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption data-en="Acting">Actuación</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="talent-fashion.jpg" alt="Moda · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption data-en="Fashion">Moda</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="talent-commercial.jpg" alt="Comercial · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption data-en="Commercial">Comercial</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="talent-music.jpg" alt="Música · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption data-en="Music">Música</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="talent-seniors.jpg" alt="Adultos mayores · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption data-en="Seniors">Adultos mayores</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="clay.jpg" alt="Clay · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption>Clay</figcaption>
+    </figure>
+    <figure class="mosaic-item">
+      <img src="sergio.jpg" alt="Sergio · talento deleFOCO" loading="lazy" width="400" height="500">
+      <figcaption>Sergio</figcaption>
+    </figure>
+  </div>
+  <p class="mosaic-cta"><a class="btn btn-outline" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener"><span data-en="See full directory">Ver directorio completo</span> <span>→</span></a></p>
+</div>
+</section>
+<section class="catalog-section" id="oportunidades"><div class="section-heading light"><div><p class="eyebrow dark" data-en="OPEN CALLS">CONVOCATORIAS ABIERTAS</p><h2 data-en="Apply today.">Postulate hoy.</h2></div><p data-en="Active castings from the Opportunities module.">Castings activos del módulo Oportunidades.</p></div><div class="opp-grid" id="oppGrid" aria-live="polite"></div><p class="opp-more"><a class="btn btn-outline" id="oppAll" href="#" target="_blank" rel="noopener"><span data-lbl>Quiero que me avisen de castings</span> <span>→</span></a></p></section>
+<section class="contact-section" id="perfil"><div class="contact-intro"><p class="eyebrow dark" data-en="CREATE MY PROFILE">CREAR MI PERFIL</p><h2 data-en="Your profile, in front of producers.">Tu perfil, frente a las productoras.</h2><p data-en="Fill it in once. Creating a profile is free, and you can update it later from My deleFOCO.">Completalo una vez. Crear un perfil es gratis y luego lo actualizás desde Mi deleFOCO.</p><div class="contact-info"><div><span data-en="Questions? WhatsApp">¿Dudas? WhatsApp</span><strong><a id="waQuestion" href="https://wa.me/50686823430" target="_blank" rel="noopener">+506 8682-3430</a></strong></div><div><span>Mi deleFOCO</span><strong><a href="https://delefoco.com/mi-delefoco/" target="_blank" rel="noopener" data-en="Update my profile →">Actualizar mi perfil →</a></strong></div></div><div class="after-send"><h3 data-en="What happens after you send?">¿Qué pasa después de enviar?</h3><ol><li><b>1</b><div><strong data-en="We review your profile">Revisamos tu perfil</strong><p data-en="The deleFOCO team checks your details, photos and links.">El equipo de deleFOCO revisa tus datos, fotos y enlaces.</p></div></li><li><b>2</b><div><strong data-en="We write to you">Te escribimos</strong><p data-en="We contact you at the email or WhatsApp you left, to confirm or ask for anything missing.">Te contactamos al correo o WhatsApp que dejaste, para confirmar o pedirte lo que falte.</p></div></li><li><b>3</b><div><strong data-en="You enter the directory">Entrás al directorio</strong><p data-en="Your profile becomes visible to producers and brands, and you can apply from Opportunities.">Tu perfil queda visible para productoras y marcas, y podés postularte desde Oportunidades.</p></div></li></ol></div></div>
+<form class="lead-form" id="profileForm">
+<label><span data-en="Full name">Nombre completo</span><input type="text" name="name" required autocomplete="name" placeholder="Tu nombre y apellidos" data-en-placeholder="Your full name"></label>
+<label><span data-en="Email / WhatsApp">Correo / WhatsApp</span><input type="text" name="contact" required placeholder="correo@ejemplo.com o +506 ..." data-en-placeholder="email@example.com or +506 ..."></label>
+<label><span data-en="Main category">Categoría principal</span><select name="cat" required><option value="" data-en="Choose one">Elegí una</option><option value="Actuación" data-en="Acting">Actuación</option><option value="Modelaje" data-en="Modeling">Modelaje</option><option value="Danza" data-en="Dance">Danza</option><option value="Música" data-en="Music">Música</option><option value="Presentación" data-en="Hosting">Presentación</option><option value="Otro" data-en="Other">Otro</option></select></label>
+<label><span data-en="Age / age range">Edad / rango de edad</span><select name="age" required><option value="" data-en="Choose one">Elegí una</option><option value="0–12" data-en="0–12">0–12</option><option value="13–17" data-en="13–17">13–17</option><option value="18–29" data-en="18–29">18–29</option><option value="30–44" data-en="30–44">30–44</option><option value="45–59" data-en="45–59">45–59</option><option value="60+" data-en="60+">60+</option></select></label>
+<label><span data-en="City">Ciudad</span><input type="text" name="city" required placeholder="Ej. San José" data-en-placeholder="E.g. San José"></label>
+<fieldset class="chk-group"><legend data-en="Languages">Idiomas</legend><label class="chk"><input type="checkbox" name="langs" value="Español"><span data-en="Spanish">Español</span></label><label class="chk"><input type="checkbox" name="langs" value="Inglés"><span data-en="English">Inglés</span></label><label class="chk"><input type="checkbox" name="langs" value="Francés"><span data-en="French">Francés</span></label><label class="chk"><input type="checkbox" name="langs" value="Otro"><span data-en="Other">Otro</span></label></fieldset>
+<label class="full"><span data-en="Book / showreel link (optional)">Enlace a tu book/showreel (opcional)</span><input type="url" name="book" pattern="https?://.+" inputmode="url" placeholder="https://youtube.com/..." data-en-placeholder="https://youtube.com/..."></label>
+<label class="full"><span data-en="Link to your photos">Enlace a tus fotos</span><input type="url" name="photos" required pattern="https?://.+" inputmode="url" placeholder="https://drive.google.com/... o tu Instagram" data-en-placeholder="https://drive.google.com/... or your Instagram" title="https://..."></label>
+<label class="consent full"><input type="checkbox" name="consent" required><span data-en="I authorize deleFOCO to use this data to contact me and I have read the <a href='#' data-privacy>Privacy Notice</a>.">Autorizo a deleFOCO a usar estos datos para contactarme y he leído el <a href="#" data-privacy>Aviso de privacidad</a>.</span></label>
+<p class="form-note full" data-en="Files cannot be attached here: paste public links (Drive, Dropbox, Instagram, YouTube...). Make sure anyone with the link can view them.">Aquí no se pueden adjuntar archivos: pegá enlaces públicos (Drive, Dropbox, Instagram, YouTube…). Verificá que cualquiera con el enlace pueda verlos.</p>
+<button class="btn btn-red full" type="submit"><span data-en="Send profile">Enviar perfil</span> <span>→</span></button>
+<p class="form-status full" id="profStatus" role="status" aria-live="polite"></p></form></section>
+<section class="section" id="faq"><div class="section-heading"><div><p class="eyebrow dark" data-en="FAQ">PREGUNTAS FRECUENTES</p><h2 data-en="Before you start.">Antes de empezar.</h2></div><p data-en="What talent asks us most.">Lo que más nos preguntan los talentos.</p></div><div class="faq-list"><details class="faq"><summary data-en="Does it cost anything to create a profile?">¿Cuesta crear un perfil?</summary><p data-en="No. Creating your profile in the directory is free.">No. Crear tu perfil en el directorio es gratis.</p></details><details class="faq"><summary data-en="How will I be notified about a casting?">¿Cómo me notifican de un casting?</summary><p data-en="We write to the email or WhatsApp on your profile when a casting matches you. You can also apply yourself in Opportunities.">Te escribimos por el correo o WhatsApp de tu perfil cuando un casting coincide contigo. También podés postularte tú en Oportunidades.</p></details><details class="faq"><summary data-en="What is the difference between the directory, deleFOCO SELECT and representation?">¿Qué diferencia hay entre el directorio, deleFOCO SELECT y la representación?</summary><p data-en="Directory: your open, visible profile. deleFOCO SELECT: featured profiles with more visibility and contact priority. Representation: deleFOCO manages your career and castings.">Directorio: tu perfil abierto y visible. deleFOCO SELECT: perfiles destacados con mayor visibilidad y prioridad de contacto. Representación: deleFOCO gestiona tu carrera y tus castings.</p></details></div></section>
+<section class="eco-band" aria-label="Ecosistema deleFOCO" data-en-aria-label="deleFOCO ecosystem"><div class="eco-band-inner"><img src="logo-delefoco-icono.png" alt="" class="eco-band-icon" width="56" height="56" aria-hidden="true"><p class="eco-band-text" data-en="Your career, connected to the deleFOCO ecosystem.">Tu carrera, conectada al ecosistema deleFOCO.</p><nav class="eco-band-links"><a href="https://delefoco.com/escuela/" target="_blank" rel="noopener" data-en="School">Escuela</a><a href="https://delefoco.com/comunidad/" target="_blank" rel="noopener" data-en="Community & memberships">Comunidad y membresías</a><a href="#oportunidades" data-opp data-en="Opportunities">Oportunidades</a><a href="https://delefoco.com/mi-delefoco/" target="_blank" rel="noopener" data-en="My deleFOCO">Mi deleFOCO</a><a href="https://delefoco.com/noticias/" target="_blank" rel="noopener" data-en="Magazine">Revista</a></nav></div></section>
+</main>
+<footer class="footer-profesional">
+    <div class="footer-social">
+      <div class="footer-social-inner">
+        <h3 data-en="Connect with deleFOCO">Conectá con deleFOCO</h3>
+        <div class="social-list">
+          <a class="social-item" href="https://www.facebook.com/delefoco" target="_blank" rel="noopener" aria-label="Facebook">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg>
+            </span>
+            <span class="social-text"><strong data-en="Follow us">Seguinos</strong><span data-en="on Facebook">en Facebook</span></span>
+          </a>
+          <a class="social-item" href="https://www.instagram.com/delefoco/" target="_blank" rel="noopener" aria-label="Instagram">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="social-text"><strong data-en="Follow us">Seguinos</strong><span data-en="on Instagram">en Instagram</span></span>
+          </a>
+          <a class="social-item" href="https://api.whatsapp.com/send/?phone=50686823430" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 21l1.65-4.9A8.5 8.5 0 1 1 8 19.4L3 21z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .7c-1-.4-2-1.4-2.4-2.4l.7-1-1-2L9 8.5z" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="social-text"><strong data-en="Write to us">Escribinos</strong><span data-en="on WhatsApp">en WhatsApp</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-wrap">
+        <div class="footer-brand-area">
+          <a href="#inicio" class="footer-logo-link" aria-label="deleFOCO">
+            <img src="logo.png" alt="deleFOCO" class="logo footer-logo-img" width="180" height="40" loading="lazy" decoding="async">
+          </a>
+          <p><span data-en="deleFOCO · Mercedes de Montes de Oca, San José">deleFOCO · Mercedes de Montes de Oca, San José</span><br><a class="footer-eco-link" href="https://delefoco.com/" target="_blank" rel="noopener" data-en="Part of the deleFOCO ecosystem">Parte del ecosistema deleFOCO</a></p>
+        </div>
+        <div class="footer-column">
+          <h4 data-en="LOCATION">UBICACIÓN</h4>
+          <p>Mercedes de Montes de Oca,<br>25 m norte de la UNED<br>San José, Costa Rica</p>
+        </div>
+        <div class="footer-column">
+          <h4 data-en="CONTACT">CONTACTO</h4>
+          <a href="tel:+50622244696">+506 2224-4696</a>
+          <a href="https://wa.me/50686823430" target="_blank" rel="noopener">WhatsApp +506 8682-3430</a>
+          <a href="mailto:comunidad@delefoco.com">comunidad@delefoco.com</a><span>Lunes a viernes · 9:00 a.m. – 5:00 p.m.</span>
+        </div>
+        <div class="footer-column footer-important">
+          <h4 data-en="IMPORTANT">IMPORTANTE</h4>
+          <div class="footer-links footer-links-2col">
+            <a href="https://delefoco.com/" target="_blank" rel="noopener" data-en="About us">Nosotros</a>
+            <a href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="Portfolio">Portafolio</a>
+            <a href="https://delefoco.com/comunidad/" target="_blank" rel="noopener" data-en="Full directory">Directorio completo</a>
+            <a href="https://delefoco.com/escuela/" target="_blank" rel="noopener" data-en="School">Escuela</a>
+            <a href="#oportunidades" data-opp data-en="Opportunities">Oportunidades</a>
+            <a href="#ofrecemos" data-en="What we offer">Qué ofrecemos</a>
+            <a href="https://delefoco.com/noticias/" target="_blank" rel="noopener" data-en="Magazine">Revista</a>
+            <a href="#perfil" data-en="Create my profile">Crear mi perfil</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-en="© 2026 deleFOCO">© 2026 deleFOCO</span>
+        <div class="footer-bottom-links">
+          <a href="#" data-privacy data-en="Privacy Notice">Aviso de privacidad</a>
+          <a href="https://delefoco.com/" target="_blank" rel="noopener">delefoco.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<dialog class="privacy-dialog" id="privacyDialog" aria-labelledby="privacyTitle"><div class="privacy-head"><h2 id="privacyTitle" data-en="Privacy Notice">Aviso de privacidad</h2><button type="button" class="privacy-close" id="privacyClose" aria-label="Cerrar" data-en-aria-label="Close">×</button></div><div class="privacy-body">
+<h3 data-en="Who is responsible">Quién es el responsable</h3><p data-en="deleFOCO, San José, Costa Rica. Contact: comunidad@delefoco.com.">deleFOCO, San José, Costa Rica. Contacto: comunidad@delefoco.com.</p>
+<h3 data-en="What we use it for">Para qué usamos tus datos</h3><p data-en="To create and review your profile, write to you about castings and coordinate with producers and brands. Sending the form is a request: it does not guarantee a casting or create a contract.">Para crear y revisar tu perfil, escribirte por castings y coordinar con productoras y marcas. Enviar el formulario es una solicitud: no garantiza un casting ni crea un contrato.</p>
+<h3 data-en="How your data travels">Cómo viajan tus datos</h3><p data-en="If online sending is unavailable, your answers open in WhatsApp so you can send them to our team. WhatsApp is operated by a third party.">Si el envío en línea no está disponible, tus respuestas se abren en WhatsApp para que se las mandés a nuestro equipo. WhatsApp es operado por un tercero.</p>
+<h3 data-en="Your photos and profile">Tus fotos y tu perfil</h3><p data-en="Your profile is only shared with producers and brands for casting purposes. Sensitive traits are only used where legally appropriate.">Tu perfil se comparte con productoras y marcas solo para castings. Los rasgos sensibles solo se usan cuando es legalmente apropiado.</p>
+<h3 data-en="Your rights">Tus derechos</h3><p data-en="Under Costa Rican Law 8968 you can request access, rectification or deletion of your data at comunidad@delefoco.com.">Según la Ley 8968 podés pedir acceso, rectificación o eliminación de tus datos en comunidad@delefoco.com.</p></div><div class="privacy-foot"><button type="button" class="btn btn-red" id="privacyOk" data-en="Understood">Entendido</button></div></dialog>
+<script src="script.js" defer></script>
+</body></html>
